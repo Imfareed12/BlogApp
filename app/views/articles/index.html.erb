@@ -10,4 +10,6 @@ Our blog has <%= Article.public_count %> articles and counting!
   <% end %>
 </ul>
 
-<%= link_to "New Article", new_article_path %>
+<%= link_to "New Article", new_article_path %> | 
+
+<%= link_to "Log Out", destroy_user_session_path %>
