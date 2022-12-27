@@ -16,8 +16,10 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+    @user = current_user.email
 
     if @article.save
+      BlogCreatedMailer.blog_email(current_user).deliver
       redirect_to @article
     else
       render :new, status: :unprocessable_entity
