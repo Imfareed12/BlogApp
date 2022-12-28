@@ -1,5 +1,5 @@
 class BlogCreatedMailer < ApplicationMailer
-    default from: 'ghulam.fareed@amroodlabs.com'
+    default from: 'ghulam05fareed@gmail.com'
 
     def blog_email(user_id)
       @user = User.find(user_id)
