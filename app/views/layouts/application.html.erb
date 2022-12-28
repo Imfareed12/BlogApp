@@ -12,5 +12,9 @@
 
   <body>
     <%= yield %>
+    <div>
+      <%= link_to 'Urdu', root_path(locale: :ur) %> | 
+      <%= link_to 'English', root_path(locale: :en) %>
+     </div>
   </body>
 </html>

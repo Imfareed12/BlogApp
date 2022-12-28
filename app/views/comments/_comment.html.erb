@@ -1,11 +1,11 @@
 <% unless comment.archived? %>
   <p>
-    <strong>Commenter:</strong>
+    <strong><%= t '.commenter' %></strong>
     <%= comment.commenter %>
   </p>
 
   <p>
-    <strong>Comment:</strong>
+    <strong><%= t '.comment' %></strong>
     <%= comment.body %>
   </p>
 

@@ -1,0 +1,27 @@
+ur:
+  global:
+    forms:
+      submit: "جمع کرائیں"
+  activerecord:
+    models:
+      Article: "مضمون"
+      Comment: "تبصرہ"
+  activerecord:
+    attributes:
+      article:
+        title: "مضمون کا عنوان"
+        body: "مضمون کا باڈی"
+        status: "حالت"
+      comment:
+        commenter: "تبصرہ کرنے والا"
+        body: "تبصرہ"
+        status: "حالت"
+  articles:
+    index:
+      welcome: "خوش آمدید!"
+      services_html: "ہم اچھے لوگوں کو کچھ فینسی خدمات فراہم کرتے ہیں۔"
+    new:
+      New Article: "نیا مضمون"
+    show:
+      Add a comment: "تبصرہ شامل کریں"
+      comments: "تبصرے"
