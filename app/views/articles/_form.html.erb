@@ -1,27 +1,31 @@
 <%= form_with model: article do |form| %>
-    <div>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
+<div class="card">
+  <div class="card-body">
+    <div class="mb-3">
+      <%= form.label :title, { class: "form-label"} %><br>
+      <%= form.text_field :title, { class: "form-control", placeholder: "Title" } %>
       <% article.errors.full_messages_for(:title).each do |message| %>
         <div><%= message %></div>
       <% end %>
     </div>
   
-    <div>
-      <%= form.label :body %><br>
-      <%= form.text_area :body %><br>
+    <div class="mb-3">
+      <%= form.label :body, { class: "form-label"} %><br>
+      <%= form.text_area :body, { class: "form-control", placeholder: "Body" } %><br>
       <% article.errors.full_messages_for(:body).each do |message| %>
         <div><%= message %></div>
       <% end %>
     </div>
 
-    <div>
-        <%= form.label :status %><br>
+    <div class="mb-3">
+        <%= form.label :status, { class: "form-label"} %><br>
         <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
     </div>
   
-    <div>
-      <%= form.submit t('global.forms.submit') %>
+    <div class="mb-3">
+      <%= form.submit t('global.forms.submit'), class: "btn btn-primary" %>
     </div>
+  </div>
+</div>
   <% end %>
   
