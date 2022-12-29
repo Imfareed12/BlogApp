@@ -20,5 +20,6 @@ module BlogApp
     config.active_job.queue_adapter = :sidekiq
     config.i18n.available_locales = [:en, :ur]
     config.i18n.default_locale = :en
+    config.active_storage.variant_processor = :mini_magick
   end
 end

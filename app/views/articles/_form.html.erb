@@ -18,6 +18,11 @@
     </div>
 
     <div class="mb-3">
+      <%= form.label :image, { class: "form-label"} %><br>
+      <%= form.file_field :image, { class: "form_control" } %>
+    </div>
+
+    <div class="mb-3">
         <%= form.label :status, { class: "form-label"} %><br>
         <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
     </div>
